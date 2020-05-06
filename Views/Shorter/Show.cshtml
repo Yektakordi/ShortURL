@@ -1,0 +1,23 @@
+﻿@model ShortModel
+@{
+    ViewData["Title"] = "";
+}
+
+<br />
+
+<div class="jumbotron">
+
+    <h1>کوتاه کننده لینک</h1>
+
+   
+    <br />
+
+    <ul>
+
+        <li>
+            <a asp-controller="Shorter" asp-action="Go" asp-route-path="@ViewData["Path"]">
+                http://localhost:5000/Shorter/Go/@ViewData["Path"]
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,24 @@
+﻿@model ShortModel
+@{   
+    ViewData["Title"] = "کوتاه کننده لینک";
+}
+
+<br />
+
+<div class="jumbotron">
+
+    <h1>کوتاه کننده لینک</h1>
+
+    <br />
+
+    <form asp-action="Create">
+        <div class="form-horizontal">
+            <div class="input-group input-group-lg">
+                <input asp-for="MainUrl" class="form-control" placeholder="اینجا وارد کنید" />
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">تایید</button>
+                </span>
+            </div>
+        </div>
+    </form>
+</div>
